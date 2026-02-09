@@ -7,8 +7,8 @@ import { getLang, t } from "./lib/i18n";
 export default function Nav() {
   const sp = useSearchParams();
   const pathname = usePathname();
-const lang = getLang();
-const tr = t;
+  const lang = getLang(Object.fromEntries(sp.entries()));
+const tr = t(lang);
 
   const nextLang = lang === "ar" ? "en" : "ar";
   const hrefWithLang = (href: string) => `${href}${href.includes("?") ? "&" : "?"}lang=${lang}`;
