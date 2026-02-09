@@ -20,7 +20,7 @@ const tr = t;
         <img src="/logo.jpeg" alt="Byoolatu logo" style={{width:40,height:40,borderRadius:12,border:"1px solid rgba(0,0,0,.08)",objectFit:"cover"}} />
         <div>
           <div style={{fontWeight: 900, lineHeight: 1.1}}>
-            {tr.appName} <span className="muted" style={{fontWeight: 700}}>/ {tr.appNameEn}</span>
+            {tr.title} <span className="muted" style={{fontWeight: 700}}>/ {tr.appNameEn}</span>
           </div>
           <div className="muted" style={{fontSize: 12}}>
             {lang === "ar" ? "منصة البطولات والقرعة" : "Tournaments & draws platform"}
