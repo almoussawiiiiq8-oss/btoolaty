@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useSearchParams, usePathname } from "next/navigation";
-import { getLang, t } import { getLang, t } from "./lib/i18n";
+import { getLang, t } from "./lib/i18n";
 
 export default function Nav() {
   const sp = useSearchParams();
