@@ -1,5 +1,5 @@
 export function getLang() {
-  return "ar"; // تقدر تغيرها لاحقاً
+  return "ar";
 }
 
 const dict = {
@@ -11,10 +11,6 @@ const dict = {
   },
 } as const;
 
-type Lang = keyof typeof dict;
-type Keys = keyof (typeof dict)["ar"];
-
-export function t(key: Keys) {
-  const lang = getLang() as Lang;
-  return dict[lang][key] ?? key;
+export function t(lang: keyof typeof dict) {
+  return dict[lang];
 }
